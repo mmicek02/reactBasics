@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    color: darkslategray;
+    background: lightblue;
+  }
+  header {
+    text-align: center;
+    padding-left: 50px;
+  }
+  main {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .headshot {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid white;
+    border-radius: 75px;
+    display: block;
+  }
+  .intro {
+    width: 450px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .workhistory {
+    width: 800px;
+    height: 300px;
+    padding-bottom: 30px;
+  }
+  .jobTitle {
+    display: block;
+    font-display: 16px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  .edu, .job, .date, .description {
+    display: block;
+    margin-left: 10px;
+    margin-top: 6px;
+  }
+  address {
+    display: block;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  footer li {
+    list-style-type:none;
+    margin-left: 50px;
+  }

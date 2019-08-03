@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student's Resume</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+    <script type="text/babel">
+        function App(props) {
+        return (
+            <div id="resume">
+                <header>
+                    {props.children}
+                </header>
+                <main>
+                    <span class="headshot">
+                        <img src={`https://pbs.twimg.com/profile_images/1502208479/2042_400x400.jpg`} width={100} alt={`A professional headshot of Sally Student.`} />
+                    </span>
+                    <section className="education">
+                        <h2>Education</h2>
+                        <span className="edu"><strong>College Unversity - Class of 2015</strong></span>
+                        <span className="edu"><strong>Bloc Coding Bootcamp</strong></span>
+                    </section>
+                    <section class="emploHistory">
+                        <h2>Employment History</h2>
+                        <span className="jobTitle"><strong>Website's R Us</strong></span>
+                        <span className="job"><strong>Postion:</strong> Junior Developer</span>
+                        <span className="date"><strong>Date:</strong> November 2018 - Current</span>
+                        <span className="description"><strong>Responsibilties:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+
+                        <span className="jobTitle"><strong>Tim's Design Depot</strong></span>
+                        <span className="job"><strong>Postion:</strong> Web Development Intern</span>
+                        <span className="date"><strong>Dates:</strong> August 2018 - October 2018</span>
+                        <span className="description"><strong>Responsibilties:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+                    </section>
+                </main>
+                <address>
+                        Interested in working with me and my amazing coding skills? You can contact me using any of the methods below. Please allow 
+                        for up to 24 hours for a response.
+                </address>
+                <footer>
+                    <ul>
+                        <li>Name: Sally Student</li>
+                        <li>Email: <a href="mailto:sallystudent@gmail.com?subject=Let's%20Collaborate!" target="_Top">sallystudent@gmail.com</a>
+                        </li>
+                        <li>Phone: (800) 345-6789</li>
+                        <li>Twitter: <a href="https://twitter.com/sallystudent">@SallyStudent</a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        );
+        }
+
+        ReactDOM.render(
+            <App className='my-class'>
+                <h1>Sally Student</h1>
+            </App>,
+            document.querySelector('#application-root')
+        );
+    </script>
+</body>
+</html>
